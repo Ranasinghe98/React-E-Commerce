@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 
 const App = () => {
   return(<>
-      <h1>Starting Files Ready</h1>
+      <h1>React Router setup</h1>
     </>)
 }
 
