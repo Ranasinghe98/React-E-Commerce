@@ -1,9 +1,27 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { Home } from './pages/Home/Home'
+import { Product } from './pages/Product/Product'
+import { Products } from './pages/Products/Products'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home/>
+  },
+  {
+    path: '/products/:id',
+    element: <Products/>
+  },
+  {
+    path: '/product/:id',
+    element: <Product/>
+  },
+])
 
 const App = () => {
   return(<>
-      <h1>React Router setup</h1>
+      <RouterProvider router={router} />
     </>)
 }
 
