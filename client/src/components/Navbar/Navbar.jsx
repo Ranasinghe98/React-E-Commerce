@@ -1,9 +1,9 @@
 import React from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDownIcon'
-import SearchIcon from '@mui/icons-material/SearchIcon'
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlinedIcon'
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlinedIcon'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlinedIcon'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import SearchIcon from '@mui/icons-material/Search'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 
 const Navbar = () => {
     return(<>
