@@ -5,6 +5,13 @@
         padding: 10px 30px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
     }
 
     .left{
@@ -13,7 +20,10 @@
         gap: 25px;
     }
 
-    .center{}
+    .center{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
 
     .right{
         display: flex;

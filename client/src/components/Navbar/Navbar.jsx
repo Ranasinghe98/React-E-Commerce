@@ -22,30 +22,30 @@ const Navbar = () => {
                         <KeyboardArrowDownIcon />
                     </div>
                     <div className='item'>
-                        <Link to="/productions/1">Women</Link>
+                        <Link className='link' to="/productions/1">Women</Link>
                     </div>
                     <div className='item'>
-                        <Link to="/productions/2">Men</Link>
+                        <Link className='link' to="/productions/2">Men</Link>
                     </div>
                     <div className='item'>
-                        <Link to="/productions/3">Children</Link>
+                        <Link className='link' to="/productions/3">Children</Link>
                     </div>
                 </div>
                 <div className='center'>
-                    <Link to='/'>R.Dev-Shop</Link>
+                    <Link className='link' to='/'>R.Dev-Shop</Link>
                 </div>
                 <div className='right'>
-                    <div className='center'>
-                        <Link to='/'>Homepage</Link>
+                    <div className='item'>
+                        <Link className='link' to='/'>Homepage</Link>
                     </div>
-                    <div className='center'>
-                        <Link to='/'>About</Link>
+                    <div className='item'>
+                        <Link className='link' to='/'>About</Link>
                     </div>
-                    <div className='center'>
-                        <Link to='/'>Contact</Link>
+                    <div className='item'>
+                        <Link className='link' to='/'>Contact</Link>
                     </div>
-                    <div className='center'>
-                        <Link to='/'>Store</Link>
+                    <div className='item'>
+                        <Link className='link' to='/'>Store</Link>
                     </div>
                     <div className='icons'>
                         <SearchIcon/>
