@@ -4,8 +4,9 @@ import SearchIcon from '@mui/icons-material/Search'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
-import { Link } from 'react-router-dom';
-import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
+import { Link } from 'react-router-dom'
+import './Navbar.scss'
+
 
 const Navbar = () => {
     return(<>
