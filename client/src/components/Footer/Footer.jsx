@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className='bottom'>
                 <div className='left'>
-                    <span className='logo'>Dev.R</span>
+                    <img src="/images/my-logo.png" alt="logo" />
                     <span className='copyright'>Copyright 2023. All Right Reserved</span>
                 </div>
                 <div className='right'>

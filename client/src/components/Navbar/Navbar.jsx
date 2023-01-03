@@ -22,17 +22,19 @@ const Navbar = () => {
                         <KeyboardArrowDownIcon />
                     </div>
                     <div className='item'>
-                        <Link className='link' to="/productions/1">Women</Link>
+                        <Link className='link' to="/products/1">Women</Link>
                     </div>
                     <div className='item'>
-                        <Link className='link' to="/productions/2">Men</Link>
+                        <Link className='link' to="/products/2">Men</Link>
                     </div>
                     <div className='item'>
-                        <Link className='link' to="/productions/3">Children</Link>
+                        <Link className='link' to="/products/3">Children</Link>
                     </div>
                 </div>
                 <div className='center'>
-                    <Link className='link' to='/'>R.Dev-Shop</Link>
+                    <Link className='link' to='/'>
+                        <img src="/images/my-logo.png" alt='logo'/>
+                    </Link>
                 </div>
                 <div className='right'>
                     <div className='item'>

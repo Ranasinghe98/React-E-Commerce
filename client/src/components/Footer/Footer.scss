@@ -35,14 +35,12 @@
             display: flex;
             align-items: center;
 
-            .logo{
-                color: #2879fe;
-                font-weight: bold;
-                font-size: 24px;
+            img{
+                width: 100px;
             }
 
             .copyright{
-                margin-left: 20px;
+                margin-left: 10px;
                 font-size: 12px;
                 color: #555;
             }
