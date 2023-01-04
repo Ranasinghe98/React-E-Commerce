@@ -21,9 +21,9 @@ export const Categories = () => {
             </div>
             <div className='col'>
                 <div className='row'>
-                    <img src='https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600' alt='categories'/>
+                    <img src='https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1600' alt='categories'/>
                     <button>
-                        <Link className="link" to="/products/1">Men</Link>
+                        <Link className="link" to="/products/1">New Season</Link>
                     </button>
                 </div>
             </div>
@@ -33,7 +33,7 @@ export const Categories = () => {
                         <div className='row'>
                             <img src='https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1600' alt='categories'/>
                             <button>
-                                <Link className="link" to="/products/1">New Season</Link>
+                                <Link className="link" to="/products/1">Men</Link>
                             </button>
                         </div>
                     </div>
