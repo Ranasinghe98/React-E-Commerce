@@ -50,7 +50,14 @@
             input{
                 border-radius: 5px 0px 0px 5px;
                 padding: 5px 5px;
-                font-size: 16px;
+                font-size: 14px;
+                border: 1px solid black;
+                height: 20px;
+            }
+
+            input:focus{
+                outline: none;
+                border: 1px solid #2879fe;
             }
 
             button{
@@ -61,7 +68,7 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 0px 5px 5px 0px;
-                padding: 6px;
+                padding: 4px;
 
                 .searchIcon{
                     font-size: 24px;
