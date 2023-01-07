@@ -24,15 +24,15 @@ const router = createBrowserRouter([
     element: <Layout/>,
     children: [
       {
-        path: '/REACT_E_COMMERCE',
+        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE/',
         element: <Home/>
       },
       {
-        path: '/products/:id',
+        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE//products/:id',
         element: <Products/>
       },
       {
-        path: '/product/:id',
+        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE//product/:id',
         element: <Product/>
       },
     ]
