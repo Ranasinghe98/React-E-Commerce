@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Footer.scss"
+import FooterImg from "../../images/payment.png"
+import Logo from "../../images/my-logo.png"
 
 const Footer = () => {
     return(<>
@@ -32,11 +34,11 @@ const Footer = () => {
             </div>
             <div className='bottom'>
                 <div className='left'>
-                    <img src="/images/my-logo.png" alt="logo" />
+                    <img src={Logo} alt="logo" />
                     <span className='copyright'>Copyright 2023. All Right Reserved</span>
                 </div>
                 <div className='right'>
-                    <img src='/images/payment.png' alt='payment'/>
+                    <img src={FooterImg} alt='payment'/>
                 </div>
             </div>
         </div>

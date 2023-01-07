@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from '@mui/icons-material/Search'
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
 import { Cart } from '../Cart/Cart';
+import Logo from "../../images/my-logo.png"
+
 
 
 const Navbar = () => {
@@ -18,14 +17,6 @@ const Navbar = () => {
             <div className='wrapper'>
                 <div className='left'>
                     <div className='item'>
-                        <img src='/images/en.png' alt='flag' />
-                        <KeyboardArrowDownIcon />
-                    </div>
-                    <div className='item'>
-                        <span>USD</span>
-                        <KeyboardArrowDownIcon />
-                    </div>
-                    <div className='item'>
                         <Link className='link' to="/products/1">Women</Link>
                     </div>
                     <div className='item'>
@@ -36,14 +27,11 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='center'>
-                    <Link className='link' to='/'>
-                        <img src="/images/my-logo.png" alt='logo'/>
+                    <Link className='link' to='/REACT_E_COMMERCE'>
+                        <img src={Logo} alt='logo'/>
                     </Link>
                 </div>
                 <div className='right'>
-                    <div className='item'>
-                        <Link className='link' to='/'>Homepage</Link>
-                    </div>
                     <div className='item'>
                         <Link className='link' to='/'>About</Link>
                     </div>
@@ -54,9 +42,12 @@ const Navbar = () => {
                         <Link className='link' to='/'>Store</Link>
                     </div>
                     <div className='icons'>
-                        <SearchIcon/>
-                        <PersonOutlineOutlinedIcon/>
-                        <FavoriteBorderOutlinedIcon/>
+                        <div className='searchBox'>
+                            <input type="text" placeholder='search products'  />
+                            <button>
+                                <SearchIcon className="searchIcon"/>
+                            </button>
+                        </div>
                         <div className='cartIcon' onClick={()=>setOpen(!open)}>
                             <ShoppingCartOutlinedIcon/>
                             <span>0</span>
