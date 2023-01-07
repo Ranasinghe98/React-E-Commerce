@@ -20,7 +20,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/REACT_E_COMMERCE',
+    path: '/',
     element: <Layout/>,
     children: [
       {
