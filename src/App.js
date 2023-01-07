@@ -20,19 +20,19 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/REACT_E_COMMERCE',
     element: <Layout/>,
     children: [
       {
-        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE/',
+        path: '/REACT_E_COMMERCE/',
         element: <Home/>
       },
       {
-        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE//products/:id',
+        path: '/products/:id',
         element: <Products/>
       },
       {
-        path: 'https://ranasinghe98.github.io/REACT_E_COMMERCE//product/:id',
+        path: '/product/:id',
         element: <Product/>
       },
     ]
