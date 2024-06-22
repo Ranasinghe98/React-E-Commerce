@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Footer.scss"
 import FooterImg from "../../images/payment.png"
 import Logo from "../../images/my-logo.png"
 

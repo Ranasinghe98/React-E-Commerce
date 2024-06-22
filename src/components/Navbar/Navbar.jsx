@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Link } from 'react-router-dom'
-import './Navbar.scss'
 import { Cart } from '../Cart/Cart';
 import Logo from "../../images/my-logo.png"
 

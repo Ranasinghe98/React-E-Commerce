@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card } from '../Card/Card'
-import "./FeaturedProducts.scss"
 
 export const FeaturedProducts = ({type}) => {
 

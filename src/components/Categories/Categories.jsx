@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Categories.scss"
 import { Link } from "react-router-dom"
 
 export const Categories = () => {
