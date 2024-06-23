@@ -8,24 +8,31 @@
         align-items: center;
     }
 
-    .item{
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-    }
-
     .left{
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      .item{
+        display: none;
+        @include tablet-landscape{
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+        }
+      }
+      .more-menu{
         display: flex;
-        align-items: center;
-        gap: 25px;
+        @include tablet-landscape{
+          display: none;
+        }
+      }
     }
 
     .center{
         font-size: 30px;
         letter-spacing: 2px;
-
         img{
-            width: 150px;
+          width: 150px;
         }
     }
 
@@ -33,6 +40,14 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        .item{
+          display: none;
+          @include tablet-landscape{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+          }
+      }
     }
 
     .icons{

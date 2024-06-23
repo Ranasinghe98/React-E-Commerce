@@ -1,3 +1,9 @@
+// Mixins
+@import "./mixins";
+
+// Common styles
+@import './common';
+
 // Components
 @import './components/card';
 @import './components/cart';
@@ -9,8 +15,3 @@
 @import './components/navbar';
 @import './components/slider';
 
-// Common styles
-@import './common';
-
-// Mixins
-@import './mixins';

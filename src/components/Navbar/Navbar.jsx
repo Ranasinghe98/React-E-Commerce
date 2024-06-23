@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import SearchIcon from '@mui/icons-material/Search'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Link } from 'react-router-dom'
 import { Cart } from '../Cart/Cart';
+import { MoreMenu } from '../MoreMenu/MoreMenu'
 import Logo from "../../images/my-logo.png"
 
 
@@ -10,6 +10,7 @@ import Logo from "../../images/my-logo.png"
 const Navbar = () => {
 
     const [open, setOpen] = useState(false)
+    const [openMenu, setOpenMenu] = useState(false)
 
     return(<>
         <div className='navbar'>
@@ -23,6 +24,9 @@ const Navbar = () => {
                     </div>
                     <div className='item'>
                         <Link className='link' to="/products/3">Children</Link>
+                    </div>
+                    <div className='more-menu'>
+                      <button className='menu' onClick={()=>setOpenMenu(!openMenu)}>Menu</button>
                     </div>
                 </div>
                 <div className='center'>
@@ -41,12 +45,6 @@ const Navbar = () => {
                         <Link className='link' to='/'>Store</Link>
                     </div>
                     <div className='icons'>
-                        <div className='searchBox'>
-                            <input type="text" placeholder='search products'  />
-                            <button>
-                                <SearchIcon className="searchIcon"/>
-                            </button>
-                        </div>
                         <div className='cartIcon' onClick={()=>setOpen(!open)}>
                             <ShoppingCartOutlinedIcon/>
                             <span>0</span>
@@ -54,6 +52,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            { openMenu && <MoreMenu /> }
             { open && <Cart /> }
         </div>
     </>)
