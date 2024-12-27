@@ -11,7 +11,7 @@ export const Contact = () => {
             <div className='wrapper'>
                 <span>BE IN TOUCH WITH US</span>
                 <div className='mail'>
-                    <input type="text" placeholder='Enter your email' />
+                    <input type="email" required placeholder='Enter your email' />
                     <button>Join Us</button>
                 </div>
                 <div className='icons'>

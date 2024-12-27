@@ -11,7 +11,7 @@ import { Squash as Hamburger } from 'hamburger-react'
 const Navbar = () => {
 
   const [open, setOpen] = useState(false)
-  const [openMenu, setOpenMenu] = useState(false)
+  //const [openMenu, setOpenMenu] = useState(false)
   const [openMenuIcon, setOpenMenuIcon] = useState(false)
 
   return(<>
