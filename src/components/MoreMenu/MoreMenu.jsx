@@ -7,7 +7,7 @@ export const MoreMenu = () => {
       <Link className='link' to='/'>About</Link>
       <Link className='link' to='/'>Contact</Link>
       <Link className='link' to='/'>Store</Link>
-      <div className='categories'>
+      <div className='item-categories'>
         <Link className='link' to="/products/1">Women</Link>
         <Link className='link' to="/products/2">Men</Link>
         <Link className='link' to="/products/3">Children</Link>

@@ -6,14 +6,15 @@ body{
 }
 
 .app{
+  font-family: 'Poppins', sans-serif;
+  input{
     font-family: 'Poppins', sans-serif;
-    input{
-        font-family: 'Poppins', sans-serif;
-    }
+  }
+  overflow: hidden;
 
 
-    .link{
-        color: inherit;
-        text-decoration: none;
-    }
+  .link{
+    color: inherit;
+    text-decoration: none;
+  }
 }

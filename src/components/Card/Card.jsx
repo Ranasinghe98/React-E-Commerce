@@ -6,7 +6,7 @@ export const Card = ({item}) => {
     console.log(item.img2)
 
     return (<>
-        <Link className="link" to={`/product/${item.id}`}>
+        <Link className="slide-item link" to={`/product/${item.id}`}>
             <div className='card'>
                 <div className='image'>
                     {item.isNew && <span>New Season</span> }
