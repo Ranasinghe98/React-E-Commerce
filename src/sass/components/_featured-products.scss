@@ -1,26 +1,66 @@
 .featuredProducts{
-    margin: 100px 200px;
+  margin: 50px;
+  
+  @include tablet-landscape{
+    margin: 100px 100px;
+    flex-direction: row;
+  }
 
-    .top{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 50px;
-
-        h1{
-            flex: 2;
-            text-transform: capitalize;
-        }
-
-        p{
-            flex: 3;
-            color: #555;
-        }
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
+    @include tablet-landscape{
+      flex-direction: row;
     }
 
-    .bottom{
-        display: flex;
-        justify-content: center;
-        gap: 50px;
+    h1{
+      flex: 2;
+      text-transform: capitalize;
+      margin: 0;
     }
+
+    p{
+      flex: 3;
+      color: #555;
+    }
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .slide-item{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .swiper-controls{
+    display: flex;
+    width: fit-content;
+    margin-inline: auto;
+    margin-block-start: 20px;
+    gap: 5px;
+    .custom-nav-button{
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border: none;
+      padding: 10px;
+      border: 1px solid grey;
+      transition: all 0.5s;
+      &:not(.swiper-button-disabled){
+        &:hover{
+          background-color: #2879fe;
+          svg{
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
 }
