@@ -27,7 +27,9 @@ export const Cart = () => {
 
     return (<>
         <div className='cart'>
-            <h1>Dev.R Shopping Cart</h1>
+          <div className="cart-wrapper">
+            <h1>Shopping Cart</h1>
+            <div className="products-wrapper">
             {data?.map(item=>(
                 <div className='item' key={item.id}>
                     <img src={item.img} alt="img" />
@@ -39,12 +41,14 @@ export const Cart = () => {
                     <DeleteOutlinedIcon className='delete'/>
                 </div>
             ))}
+            </div>
             <div className='total'>
                 <span>SUBTOTAL</span>
                 <span>$123</span>
             </div>
             <button>PROCEED TO CHECKOUT</button>
             <span className='reset'>Reset Cart</span>
+          </div>
         </div>
     </>)
 }

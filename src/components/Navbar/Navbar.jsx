@@ -29,7 +29,6 @@ const Navbar = () => {
           </div>
           <div className='more-menu'>
             <Hamburger toggled={openMenuIcon} toggle={setOpenMenuIcon} size={20} direction='left' duration={0.8}/>
-            {/* <button className='menu' onClick={()=>setOpenMenu(!openMenu)}>Menu</button> */}
           </div>
         </div>
         <div className='center'>
