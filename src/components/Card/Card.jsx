@@ -3,8 +3,6 @@ import {Link} from "react-router-dom"
 
 export const Card = ({item}) => {
 
-    console.log(item.img2)
-
     return (<>
         <Link className="slide-item link" to={`/product/${item.id}`}>
             <div className='card'>
